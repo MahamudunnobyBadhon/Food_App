@@ -57,43 +57,35 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
       },
-      {
-        path: "/category",
-        element: (
-          <PrivateRoute>
-            <AddCategory></AddCategory>
-          </PrivateRoute>
-        ),
-      },
-      {
-        path: "/admin/foodadd",
-        element: (
-          <PrivateRoute>
-            <FoodAdd></FoodAdd>
-          </PrivateRoute>
-        ),
-      },
-      {
-        path: "/admin/foodUpdate",
-        element: (
-          <PrivateRoute>
-            <FoodUpdate></FoodUpdate>
-          </PrivateRoute>
-        ),
-      },
-      {
-        path: "/admin/dashboard",
-        element: (
-          <PrivateRoute>
-            <Dashboard></Dashboard>
-          </PrivateRoute>
-        ),
-      },
-      {
-        path: "/user/dashboard",
-        element: <UserDashBoard></UserDashBoard>
-      },
+      // {
+      //   path: "/admin/addCategory",
+      //   element: (
+      //     <PrivateRoute>
+      //       <AddCategory></AddCategory>
+      //     </PrivateRoute>
+      //   ),
+      // },
+      // {
+      //   path: "/admin/foodadd",
+      //   element: (
+      //     <PrivateRoute>
+      //       <FoodAdd></FoodAdd>
+      //     </PrivateRoute>
+      //   ),
+      // },
+      // {
+      //   path: "/admin/foodUpdate",
+      //   element: (
+      //     <PrivateRoute>
+      //       <FoodUpdate></FoodUpdate>
+      //     </PrivateRoute>
+      //   ),
+      // },
     ],
+  },
+  {
+    path: "/user/dashboard",
+    element: <UserDashBoard></UserDashBoard>,
   },
 ]);
 

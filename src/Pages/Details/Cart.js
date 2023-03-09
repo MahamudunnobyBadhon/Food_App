@@ -136,7 +136,14 @@ const Cart = () => {
         <div className="checkoutDiv">
           <Link to="/checkout">
             {" "}
-            <button className="checkoutButton">Checkout</button>
+            <button
+              disabled={data?.length === 0 ? true : false}
+              className={
+                data?.length === 0 ? "disabledButton" : "checkoutButton"
+              }
+            >
+              Checkout
+            </button>
           </Link>
         </div>
       </div>

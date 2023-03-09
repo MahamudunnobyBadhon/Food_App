@@ -1,5 +1,4 @@
 import axios from "axios";
-import styled from "daisyui/dist/styled";
 import React, { useEffect, useState } from "react";
 import Modal from "../../../Shared/Modal/Modal";
 import styles from "./FoodUpdate.module.css";
@@ -42,8 +41,20 @@ const FoodUpdate = () => {
     setData(d);
   };
   return (
-    <div>
-      <h2 className={styles.headingText}>Update the food</h2>
+    <div
+      className="max-w-screen-lg mx-auto"
+      style={{
+        height: "100vh",
+      }}
+    >
+      <h2
+        style={{
+          marginTop: "35px",
+        }}
+        className="text-3xl text-center font-bold mb-5 mt-4 text-orange-700"
+      >
+        Update the food
+      </h2>
 
       <div className="overflow-x-auto w-full mt-5">
         <table className="table w-full">
